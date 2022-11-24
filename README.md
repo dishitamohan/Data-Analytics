@@ -85,7 +85,7 @@ RFMc
 
 26.	
  
-#VISUALIZATION
+# VISUALIZATION
 
 1.	sns.boxplot(x='rating' ,y='type', data=df1)
 plt.title("side-by-side boxplot comparing the consumer rating of hot vs. cold cereals.")
@@ -185,7 +185,7 @@ plt.legend(labels=df.iloc[:, 1:17], title = "Title_Legend")
 
 
 
-#DATA CLEANING
+# DATA CLEANING
 1.	df.replace(item, replace) //data cleaning
 2.	np.nan //fill up nan values
 3.	df['potass']=pd.to_numeric(df['potass'], errors='coerce') //if 'coerce', then invalid parsing will be set as NaN
@@ -282,7 +282,7 @@ x.sort_values(by='confidence', ascending=False)[0:10]
 8.	print("DATAFRAME ACC.TO LIFT CONDITION IS: ")
 x[(x['support'] >= 0.02) & (x['lift'] > 1.0)]
  
-#CORRELATION
+# CORRELATION
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -342,7 +342,7 @@ for movieID in similar_movies:
     print("\n")
 
  
-#CLUSTERING
+# CLUSTERING
 
 import pandas as pd
 import numpy as np
