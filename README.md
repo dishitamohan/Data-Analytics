@@ -229,14 +229,14 @@ df['avg_word_length'] = df['Length_of_review']/ df['Word_count']
 12.	OR3 = OR2.loc[OR2.Quantity>0]
 
 
-#AMAZON BABY
+# AMAZON BABY
 
 import pandas as pd
 from matplotlib import pyplot as plt
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-# from html.parser import HTMLParser
+#from html.parser import HTMLParser
 import re   
 # APRIORI
 
