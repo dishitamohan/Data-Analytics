@@ -1,4 +1,4 @@
-# IDA
+#IDA
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -78,6 +78,12 @@ RFMc['Recency'] = RFM['Recency'].dropna()
 RFMc['Frequency'] = RFM['Frequency'].dropna()
 RFMc['Monetary Value'] = RFM['Monetary Value'].dropna()
 RFMc
+
+24.	df = pd.read_excel('employment.xlsx', parse_dates=['datestamp'], index_col='datestamp')
+
+25.	df.set_index('datestamp')
+
+26.	
  
 #VISUALIZATION
 
@@ -142,6 +148,40 @@ plt.legend(loc='right', labels=['Occasional Customers(0)', 'Routine Customers(1)
 12.	#Visualising clusters usind dendrogram
 
 Dendrogram = shc.dendrogram((shc.linkage(Xac, method ='ward')))
+
+13.	# 2. Generate a boxplot to find the distribution of unemployment rate for every industry.
+
+sns.boxplot(data=df)
+plt.title("distribution of unemployment rate for every industry")
+sns.set(rc={"figure.figsize":(15,15)})
+sns.set(font_scale=2)
+plt.show()
+
+14.	# 4. Plot the monthly and yearly trends.
+while (i<=17):
+    sns.lineplot(x='month',y=df.iloc[:, i],data=df)
+    i=i+1
+    
+plt.xlabel("Month")
+plt.ylabel("Rate")
+plt.legend(labels=df.iloc[:, 1:17], title = "Title_Legend")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
