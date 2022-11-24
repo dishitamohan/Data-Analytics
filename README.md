@@ -238,7 +238,7 @@ import seaborn as sns
 import numpy as np
 # from html.parser import HTMLParser
 import re   
-APRIORI
+# APRIORI
 
 
 import numpy as np
